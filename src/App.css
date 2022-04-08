@@ -1,0 +1,98 @@
+:root {
+  --same-btn-color: rgb(13, 100, 239);
+  --off-white-btn-color: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  height: 100vh;
+  width: 100wh;
+}
+
+.app {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clac-wrapper {
+  margin-top: 8%;
+  background: #151515;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 15px 19px 38px,
+    rgba(0, 0, 0, 0.3) 10px 15px 12px;
+}
+
+.display {
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 300px;
+  text-align: right;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: transparent;
+  color: var(--off-white-btn-color);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
+
+button {
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  gap: 12px;
+  margin: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.sameColor {
+  background-color: var(--same-btn-color);
+  color: var(--off-white-btn-color);
+}
+
+
+
+#clear {
+  grid-column: 1/3;
+  grid-row: 1;
+  background-color: var(--same-btn-color);
+  color: var(--off-white-btn-color);
+}
+
+#backSpace {
+  font-size: 20px;
+  background-color: var(--same-btn-color);
+  color: var(--off-white-btn-color);
+}
+
+.num {
+  background-color: #262834;
+  color: var(--off-white-btn-color);
+}
+
+#mainResult {
+  grid-column: 3/5;
+  grid-row: 5;
+  background-color: var(--same-btn-color);
+  color: var(--off-white-btn-color);
+}
